@@ -1,0 +1,28 @@
+def bucket_sort(arr): 
+    buckets_arr = []
+    output = []
+    # create buckets 
+    for i in range(10): 
+        buckets_arr.append([])
+    
+    #Insert elements in buckets 
+    for value in arr: 
+        index = int(len(buckets_arr) * value)
+        buckets_arr[index].append(value)
+
+    print("buckets before sorting",  buckets_arr, sep='\n')
+    #Sortting in each bucket 
+    for i in range(len(arr)):
+        buckets_arr[i].sort()
+
+    print("buckets after sorting",  buckets_arr, sep='\n')
+    for i in range(len(buckets_arr)):
+        for j in range(len(buckets_arr[i])):
+            output.append(buckets_arr[i][j])
+    
+    return output 
+
+arr = [0.13, 0.8, 0.77, 0.2, 0.11, 0.97, 0.78]
+result = bucket_sort(arr)
+print("Sorted array", result, sep='\n')
+
