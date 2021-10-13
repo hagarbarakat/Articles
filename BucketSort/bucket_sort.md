@@ -49,7 +49,6 @@ arr = [0.13, 0.8, 0.77, 0.2, 0.11, 0.97, 0.78]
 result = bucket_sort(arr)
 print("Sorted array", result, sep='\n')
 ```
-[Github Link](https://github.com/hagarbarakat/Articles/blob/main/bucket_sort.py%20)
 ##Detect Number of Buckets 
 * If the data is floating point numbers that ranges from [0,1], use 10 buckets so that first bucket contains values from [0,1[ and so on. To know the right index: 
 
