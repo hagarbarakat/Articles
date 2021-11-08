@@ -5,14 +5,14 @@ Pancake sort is a sorting algorithm that focuses on decreasing number of reversa
 It's called pancake sort as it seems like we are flipping pancakes with a spatula, thus, what we can do to sort an array is to use ***flip*** function. 
 
 
-##Pancake sort algorithm: 
+## Pancake sort algorithm: 
 
-####flip(): 
+#### flip(): 
 Reverse all values from the beginning of the unsorted array till the specified index. 
-####find_max(): 
+#### find_max(): 
 Find index of maximum number within the specified range of an unsorted array. 
 
-####pancake_sort(): 
+#### pancake_sort(): 
 ![Unsorted Array](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/8ne29l78h8xjku5ch1vc.png)
 Iteratively, decrease **current_size** of the array, knowing for a fact that array is sorted in a bottom-up manner. 
 - Get the index of maximum value in the unsorted array within specified **current_size**, checks if index of maximum value doesn't equal **current_size - 1**, then we can ***flip(index of maximum value)*** and finally ***flip(current_size - 1)***
@@ -51,14 +51,9 @@ arr = [40, 20, 28, 8, 60, 33]
 print(pancake_sort(arr))
 ```
 
-####Time complexity:
+#### Time complexity:
 
 Complexity | value
 --- | ---
 *Best* | **O(n)**
 *Worst* | **O(n^2)**
-
-Writing a Great Post Title
-Think of your post title as a super short (but compelling!) description — like an overview of the actual post in one short sentence.
-Use keywords where appropriate to help ensure people can find your post by search.
-Save changes
