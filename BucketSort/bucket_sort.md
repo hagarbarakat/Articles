@@ -1,4 +1,4 @@
-# Bucket Sort
+![jgdoqo2dadbt22il1nfr](https://user-images.githubusercontent.com/34142333/142293556-dcb1b11b-1ce4-455d-891d-455b1eac14c1.png)
 
 # Scatter  Sort  Gather 
 **Bucket sort**, also known as **bin sort** is a sorting algorithm where elements of an array are distributed into a number of buckets. 
