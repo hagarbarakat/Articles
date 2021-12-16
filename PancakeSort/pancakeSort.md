@@ -1,3 +1,4 @@
+![arr =  40, 20, 28, 8, 60, 33](https://user-images.githubusercontent.com/34142333/142293378-bc51f1a0-cb90-4128-91aa-c5309391a91c.png)
 
 Pancake sort is a sorting algorithm that focuses on decreasing number of reversals instead of decreasing the number of comparisons which is done by traditional sorting techniques. 
 

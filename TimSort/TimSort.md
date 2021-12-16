@@ -1,8 +1,11 @@
+
+![Tim Sort](https://user-images.githubusercontent.com/34142333/142293232-bac5cc9f-1754-4f66-b167-47f0ad45a4fd.png)
+
 **Tim sort** is a hybrid, stable sorting algorithm which uses insertion sort to sort small blocks and then merge them using merge function of merge sort, the idea is that insertion sort is typically faster for small arrays.  
 It is used by sort built-in functions used in python and java languages.
 Technically, **Tim sort** was implemented in 2002 by Tim Peters in to be used in Python.
 
-##How it works: 
+## How it works: 
 1. An array is divided to number of blocks known as ***Runs,*** the size of a ***Run*** is either 32 or 64 depending on the size of the array, if the size of an array is less than the **run** then the whole array is sorted just by using insertion sort. 
 ![Array](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/h1r02874rdzs6vfziaqo.png)
 2. Sort each **run** using insertion sort.
@@ -12,7 +15,7 @@ Technically, **Tim sort** was implemented in 2002 by Tim Peters in to be used in
 4. Double the size of merged subarray after each iteration.  
 ![sorted array](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/dbihy7g4p51optj335p5.png)
 
-##What's minimum run? 
+## What's minimum run? 
 Minimum run is the smallest size of each **run**, ***minimum run*** shouldn't be: 
 - too big as insertion sort is faster with small array.
 - too small so that it will give more number of runs that will be merged through merge function of merge sort.  
@@ -88,8 +91,8 @@ print(array)
 
 ```
 
-###Complexity: 
-####Time Complexity: 
+### Complexity: 
+#### Time Complexity: 
 
 Complexity | value
 --- | ---
@@ -97,11 +100,11 @@ Complexity | value
 *Average* | **O(n log n)**
 *Worst* | **O(n log n)**
 
-#####Best Case: **O(n)** 
+##### Best Case: **O(n)** 
 - Happens when the array is already sorted.
 
-#####Worst Case: **O(n log n)**
+##### Worst Case: **O(n log n)**
 - Happens when the array is sorted in reverse order. 
 
-####Space Complexity: **O(n)**
+#### Space Complexity: **O(n)**
 
