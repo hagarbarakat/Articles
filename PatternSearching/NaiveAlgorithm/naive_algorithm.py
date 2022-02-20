@@ -7,7 +7,7 @@ def naïve_algorithm(string, pattern):
             if string[i + j] != pattern[j]:
                 break
             j += 1
-        if j == map:
+        if j == m:
             print("Pattern found at index: ", i)
 
 
